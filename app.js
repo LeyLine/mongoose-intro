@@ -5,16 +5,32 @@ const Cat = mongoose.model('Cat', {
   name: String
 });
 
-const kitty = new Cat({
-  name: 'Ironhacker'
+const Dog = mongoose.model('Dog', {
+  name: String
 });
-kitty.save((err) => {
+
+const puppy = new Dog({
+  name: 'Puppers'
+});
+
+puppy.save((err) => {
   if (err) {
     console.log(err);
   } else {
-    console.log('meow');
+    console.log('woof');
   }
 });
+
+// const kitty = new Cat({
+//   name: 'Ironhacker'
+// });
+// kitty.save((err) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log('meow');
+//   }
+// });
 console.log('All the CATS!');
 
 Cat.find({}, (err, cats) => {
