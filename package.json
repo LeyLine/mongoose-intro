@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LeyLine/mongoose-intro/issues"
   },
-  "homepage": "https://github.com/LeyLine/mongoose-intro#readme"
+  "homepage": "https://github.com/LeyLine/mongoose-intro#readme",
+  "dependencies": {
+    "mongoose": "^5.1.5"
+  }
 }
